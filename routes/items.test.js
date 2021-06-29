@@ -32,7 +32,7 @@ describe("GET /items", async function () {
 
 /** GET /items/[name] - return data about one item: `{item: item}` */
 
-describe("GET /items/:name", async function () {
+describe ("GET /items/:name", async function () {
   test("Gets a single item", async function () {
     const response = await request(app).get(`/items/${item.name}`);
     expect(response.statusCode).toBe(200);
